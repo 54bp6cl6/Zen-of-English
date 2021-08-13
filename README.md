@@ -1,5 +1,4 @@
 # Zen of English
-<img align="right" width="159px" src="https://user-images.githubusercontent.com/34936931/129287961-2a1847ee-2511-4914-a804-e4b7d4ecf175.png">
 
 Zen of English 是一款幫助英文學習的Line bot，
 

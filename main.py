@@ -11,8 +11,8 @@ from linebot import (
 )
 import db_function as db
 
-line_bot_api = LineBotApi('xZCJIWGfPsFKwEVhQvffN/0cAxJKjrqdzXAJ5/N29uJQFE/S10inMTZxs9hnEa5fQJgvJam9O/nN9J3SaKi7e9gccECnAkVBicW9AsIu7XzoyA+qRNMyock9nQG+dWUg67ombs0Tl8tOK+1H4Yi7RgdB04t89/1O/w1cDnyilFU=')
-handler = WebhookHandler('c7baa6802afc636f749ccf83d3d1ee61')
+line_bot_api = LineBotApi(os.environ.get('TOKEN', 'Specified environment variable is not set.'))
+handler = WebhookHandler(os.environ.get('SECRET', 'Specified environment variable is not set.'))
 
 themes = {
 	'date': dateQ.DateQ, 'house': houseQ.HouseQ,
